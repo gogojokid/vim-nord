@@ -220,8 +220,8 @@ call s:hi("ModeMsg", s:nord4_gui, "", "", "", "", "")
 call s:hi("MoreMsg", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("Question", s:nord4_gui, "", "NONE", "", "", "")
 if g:nord_uniform_status_lines == 0
-  call s:hi("StatusLine", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineNC", s:nord4_gui, s:nord0_gui, "NONE", s:nord1_term, "NONE", "")
+  call s:hi("StatusLine", s:nord15_gui, s:nord1_gui, s:nord8_term, s:nord3_term, "NONE", "")
+  call s:hi("StatusLineNC", s:nord15_gui, s:nord0_gui, "NONE", s:nord1_term, s:italic, "")
   call s:hi("StatusLineTerm", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
   call s:hi("StatusLineTermNC", s:nord4_gui, s:nord0_gui, "NONE", s:nord1_term, "NONE", "")
 else

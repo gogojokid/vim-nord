@@ -231,7 +231,7 @@ else
   call s:hi("StatusLineTermNC", s:nord4_gui, s:nord3_gui, "NONE", s:nord3_term, "NONE", "")
 endif
 call s:hi("WarningMsg", s:nord0_gui, s:nord13_gui, s:nord1_term, s:nord13_term, "", "")
-call s:hi("WildMenu", s:nord12_gui, s:nord0_gui, s:nord8_term, s:nord1_term, s:bold, "")
+call s:hi("WildMenu", s:nord14_gui, s:nord0_gui, s:nord8_term, s:nord1_term, s:bold, "")
 
 "+--- Search ---+
 call s:hi("IncSearch", s:nord6_gui, s:nord10_gui, s:nord6_term, s:nord10_term, s:underline, "")

@@ -21,6 +21,7 @@ let s:nord3_gui_plus = "#7c869a"
 let s:nord4_gui = "#D8DEE9"
 let s:nord5_gui = "#E5E9F0"
 let s:nord6_gui = "#ECEFF4"
+let s:nord6_gui_minus = "#ACAFB4"
 let s:nord7_gui = "#8FBCBB"
 let s:nord8_gui = "#88C0D0"
 let s:nord9_gui = "#81A1C1"
@@ -207,7 +208,7 @@ else
   call s:hi("CursorLineNr", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
 endif
 call s:hi("Folded", s:nord4_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "", "")
-call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
+call s:hi("FoldColumn", s:nord1_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
 
 "+--- Navigation ---+
@@ -220,10 +221,10 @@ call s:hi("ModeMsg", s:nord4_gui, "", "", "", "", "")
 call s:hi("MoreMsg", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("Question", s:nord4_gui, "", "NONE", "", "", "")
 if g:nord_uniform_status_lines == 0
-  call s:hi("StatusLine", s:nord15_gui, s:nord1_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineNC", s:nord15_gui, s:nord0_gui, "NONE", s:nord1_term, s:italic, "")
-  call s:hi("StatusLineTerm", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
-  call s:hi("StatusLineTermNC", s:nord4_gui, s:nord0_gui, "NONE", s:nord1_term, "NONE", "")
+  call s:hi("StatusLine", s:nord6_gui_minus, s:nord1_gui, s:nord8_term, s:nord3_term, "NONE", "")
+  call s:hi("StatusLineNC", s:nord6_gui_minus, s:nord0_gui, "NONE", s:nord1_term, s:italic.s:underline, "")
+  call s:hi("StatusLineTerm", s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord3_term, "NONE", "")
+  call s:hi("StatusLineTermNC", s:nord8_gui, s:nord0_gui, "NONE", s:nord1_term, s:italic.s:underline, "")
 else
   call s:hi("StatusLine", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
   call s:hi("StatusLineNC", s:nord4_gui, s:nord3_gui, "NONE", s:nord3_term, "NONE", "")
